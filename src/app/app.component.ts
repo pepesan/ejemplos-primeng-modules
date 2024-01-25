@@ -46,6 +46,36 @@ export class AppComponent {
             routerLink: '/navbar'
           }
         ]
+      },
+      {
+        label: 'Data',
+        items: [
+          {
+            label: 'Table',
+            icon: 'pi pi-external-link',
+            routerLink: '/table'
+          },
+          {
+            label: 'Paginator',
+            icon: 'pi pi-external-link',
+            routerLink: '/paginator'
+          },
+          {
+            label: 'DataView',
+            icon: 'pi pi-external-link',
+            routerLink: '/dataview'
+          }
+        ]
+      },
+      {
+        label: 'Formularios',
+        items: [
+          {
+            label: 'Ejemplo Completo',
+            icon: 'pi pi-external-link',
+            routerLink: '/form'
+          }
+        ]
       }
     ];
   }

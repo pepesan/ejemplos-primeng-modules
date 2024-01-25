@@ -16,6 +16,19 @@ import {RippleModule} from "primeng/ripple";
 import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
 import {MenubarModule} from "primeng/menubar";
 import {InputTextModule} from "primeng/inputtext";
+import { TableComponent } from './pages/table/table.component';
+import {TableModule} from "primeng/table";
+import {ProductService} from "./services/product.service";
+import { PaginatorComponent } from './pages/paginator/paginator.component';
+import {PaginatorModule} from "primeng/paginator";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { DataViewComponent } from './pages/data-view/data-view.component';
+import {DataViewModule} from "primeng/dataview";
+import {HttpClientModule} from "@angular/common/http";
+import {RatingModule} from "primeng/rating";
+import {TagModule} from "primeng/tag";
+import { FormComponent } from './pages/form/form.component';
+import {CardModule} from "primeng/card";
 
 @NgModule({
   declarations: [
@@ -24,20 +37,33 @@ import {InputTextModule} from "primeng/inputtext";
     AboutComponent,
     PageNotFoundComponent,
     BotonesComponent,
-    NavBarComponent
+    NavBarComponent,
+    TableComponent,
+    PaginatorComponent,
+    DataViewComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
     ToastModule,
     MenuModule,
     ButtonModule,
     RippleModule,
     MenubarModule,
-    InputTextModule
+    InputTextModule,
+    TableModule,
+    PaginatorModule,
+    DataViewModule,
+    HttpClientModule,
+    RatingModule,
+    TagModule,
+    ReactiveFormsModule,
+    CardModule,
   ],
-  providers: [MessageService],
+  providers: [MessageService, ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
